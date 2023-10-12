@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    
+    <link rel="stylesheet" href="styles.css">
+    <title>Steam Survey Form</title>
+
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">Steam Survey Form</h1>
+        <p id="descripton">" This survey form is about knowing which games are popularly played in steam "</p>
+    </header>
+
+    <form id="survey-form">
+        <div class="form-groups">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-groups">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div>
+            <label id="number-label" for="age">Age(optional)</label>
+            <input type="number" id="age" name="number" min="4" max="100" placeholder="Age">
+        </div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </form>
 </body>
 </html>
