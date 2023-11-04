@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1 id="title">Steam Survey Form</h1>
-        <p id="descripton">" This survey form is about knowing which games are popularly played in steam "</p>
+        <p id="description">" This survey form is about knowing which games are popularly played in steam "</p>
     </header>
 
     <form id="survey-form">
@@ -24,16 +24,16 @@
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
 
-        <div>
+        <div class="form-groups">
             <label id="number-label" for="age">Age(optional)</label>
-            <input type="number" id="age" name="number" min="4" max="100" placeholder="Age">
+            <input type="number" id="number" name="number" min="4" max="100" placeholder="Age">
         </div>
 
-        <div>
+        <div class="form-groups">
             <label id="dropdown-label" for="role">
                 Which option best describes your current role?
             </label>
-            <select id="dropdown-label" name="role" >
+            <select id="dropdown" name="role" >
                 <option disabled selected>Select current role</option>
                 <option value="student">Student </option>
                 <option value="job">Full Time Job </option>
@@ -41,12 +41,90 @@
             </select>
         </div>
 
-        <div></div>
-        <div></div>
+        <div class="form-groups">
+            <p>Would you recommend games from steam to play with?</p>
+
+            <label>
+                <input name="user-recommend" value="highly recommend" type="radio" class="input-radio">
+                Highly recommend
+            </label>
+
+            <label>
+                <input name="user-recommend" value="likely" type="radio" class="input-radio">
+                Likely
+            </label>
+
+            <label>
+                <input name="user-recommend" value="neutral" type="radio" class="input-radio" checked>
+                Neutral
+            </label>
+
+            <label>
+                <input name="user-recommend" value="not really" type="radio" class="input-radio">
+                Not really
+            </label>
+
+            <label>
+                <input name="user-recommend" value="not at all" type="radio" class="input-radio">
+                Not at all
+            </label>
+        </div>
+
+        <div class="form-groups">
+            <p>What games would like to recommend? <span class="reminder">(check all that would apply)</span></p>
+            
+            <label>
+                <input name="prefer" value="dota 2" type="checkbox" class="input-checkbox">
+                Dota 2
+            </label>
+
+            <label>
+                <input name="prefer" value="coutner-strike 2" type="checkbox" class="input-checkbox">
+                Counter-Strike 2
+            </label>
+
+            <label>
+                <input name="prefer" value="apex legends" type="checkbox" class="input-checkbox">
+                Apex Legends
+            </label>
+
+            <label>
+                <input name="prefer" value="farlight 84" type="checkbox" class="input-checkbox">
+                Farlight 84
+            </label>
+
+            <label>
+                <input name="prefer" value="paladins" type="checkbox" class="input-checkbox">
+                Paladins 
+            </label>
+
+            <label>
+                <input name="prefer" value="muck" type="checkbox" class="input-checkbox">
+                Muck 
+            </label>
+
+            <label>
+                <input name="prefer" value="left 4 dead 2" type="checkbox" class="input-checkbox">
+                Left 4 Dead 2
+            </label>
+
+            <label>
+                <input name="prefer" value="nba 2K23" type="checkbox" class="input-checkbox">
+                NBA 2K23
+            </label>
+
+            <label>
+                <input name="prefer" value="rocket league" type="checkbox" class="input-checkbox">
+                Rocket League
+            </label>
+
+        </div>
+
+
         <div></div>
         <div></div>
         <div></div>
 
-    </form>
+    </for>
 </body>
 </html>
