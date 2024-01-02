@@ -1,8 +1,13 @@
-
+/* COLOR SCHEME
+    #DCF2F1
+    #7FC7D9
+    #365486
+    #0F1035
+*/
 
 .container::before {
     content: "";
-    background-image: url('./Images/BG3.jpg');
+    background-image: linear-gradient(rgba(54, 84, 134, 0.6), rgba(54, 84, 134, 0.6)),url('./Images/BG3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(5px);
@@ -19,4 +24,42 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+p, h1{
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:left;
+
+    background-color: rgba(15, 16, 53, 0.5);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+
+    min-height: 80px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px; 
+
+}
+
+.form-groups{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:left;
+
+    color: whitesmoke;
 }
